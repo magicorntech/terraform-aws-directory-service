@@ -1,3 +1,8 @@
+# terraform-aws-directory-service
+
+Magicorn made Terraform Module for AWS Provider
+--
+```
 module "ds" {
   source      = "magicorntech/directory-service/aws"
   version     = "0.0.1"
@@ -14,3 +19,7 @@ module "ds" {
   edition    = "Standard"   # can also be null depending on the type
   size       = null         # can also be null depending on the type
 }
+```
+
+## Notes
+1) Nothing further your honour.

@@ -4,13 +4,14 @@ Magicorn made Terraform Module for AWS Provider
 --
 ```
 module "ds" {
-  source      = "magicorntech/directory-service/aws"
-  version     = "0.0.1"
-  tenant      = var.tenant
-  name        = var.name
-  environment = var.environment
-  vpc_id      = module.vpc.vpc_id
-  subnet_ids  = module.vpc.pvt_subnet_ids
+  source         = "magicorntech/directory-service/aws"
+  version        = "0.0.2"
+  tenant         = var.tenant
+  name           = var.name
+  environment    = var.environment
+  vpc_id         = module.vpc.vpc_id
+  subnet_ids     = module.vpc.pvt_subnet_ids
+  additional_ips = ["10.10.0.0/16", "10.20.0.0/16"]
 
   # Directory Service Configuration
   ds_name    = "example.local"

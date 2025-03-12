@@ -3,6 +3,7 @@ variable "name" {}
 variable "environment" {}
 variable "vpc_id" {}
 variable "subnet_ids" {}
+variable "additional_ips" {}
 variable "ds_name" {}
 variable "short_name" {}
 variable "type" {}

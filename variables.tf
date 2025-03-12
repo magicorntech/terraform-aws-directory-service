@@ -1,0 +1,10 @@
+variable "tenant" {}
+variable "name" {}
+variable "environment" {}
+variable "vpc_id" {}
+variable "subnet_ids" {}
+variable "ds_name" {}
+variable "short_name" {}
+variable "type" {}
+variable "edition" {}
+variable "size" {}
